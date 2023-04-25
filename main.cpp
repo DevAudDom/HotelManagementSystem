@@ -8,27 +8,45 @@ void title() // Function without parameter, without return type
     cout << "Hotel Management System" << endl;
     cout << "********************************" << endl;
 }
-
-int make_booking()
-{
+int make_booking(){
     int roomchoice;
-
+    class Room
+    {
+    public:
+        string booking;
+        string guestname;
+        string guestnum;
+        string roomnum;
+        int daysbooked;
+    };
+    Room 11A;
+    // Room 12B;
+    // Room 13C;
+    11A.roomnum = "11A";
+    // 12B.roomnum = "12B";
+    // 13C.roomnum = "13C";
+    11A.booking = "Open";
+    // 12B.booking = "Open";
+    // 13C.booking = "Open";
     title();
     cout << "[Make Booking]" << endl;
-    cout << "Available Rooms:" << endl;
+    cout << "Available Rooms: " << endl;
+    cout << "1." << 11A.booking;
+    // cout << "2." << 12B.booking;
+    // cout << "3." << 13C.booking;
     cout << "Please select a room: ";
     cin >> roomchoice;
 
     return roomchoice;
 
 }
-
 int roomlegend()
 {
     title();
 }
 
 int roomcategories()
+
 {
     int roomdetails;
 
@@ -41,9 +59,9 @@ int roomcategories()
     cout << "3. Return to Main Menu" << endl;
     cout << "Enter the integer corresponding to the room details you wish to see or return to main menu: ";
     cin >> roomdetails;
+
     switch (roomdetails)
     {
-
         case 0:
             title();
             cout << "[1 King Bed Deluxe Details]" << endl;
@@ -66,38 +84,27 @@ int roomcategories()
             cout << "Invalid Input. Please Try Again" << endl;
             roomcategories();
     }
-
 }
-
 int servpack()
+
 {
     title();
 }
-
 int main()
 {
     int choice;
 
     do
     {
-
-//        cout << "\n********************************" << endl;
-
-//        cout << "Hotel Management System" << endl;
-
-//        cout << "********************************" << endl;
-
         title();
         cout << "0. Make Booking" << endl;
         cout << "1. Room Legend" << endl;
         cout << "2. Room Categories" << endl;
-        cout << "3. Service Packages" << endl;
-        cout << "4. Quit" << endl;
+        cout << "3. Quit" << endl;
         cout << "Enter the integer corresponding to the menu you'd like to access: ";
         cin >> choice;
 
         switch (choice)
-
         {
             case 0:
                 cout << "you selected make booking";
@@ -110,10 +117,11 @@ int main()
                 roomcategories();
                 break;
             case 3:
-                cout << "you selected service packages";
-                break;
-            case 4:
-                cout << "you selected quit";
+
+                cout << "You selected quit";
+
+                cout << "Have a nice day!";
+
                 return 0;
             default:
                 cout << "Invalid Input. Please Try Again" << endl;
