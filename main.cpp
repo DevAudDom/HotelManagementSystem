@@ -26,7 +26,7 @@ int make_booking(){
     Unit11A.roomnum = "11A";
     // Unit12B.roomnum = "12B";
     // Unit13C.roomnum = "13C";
-    Unit11A.booking = "Open";
+    Unit11A.booking = "[Open]";
     // Unit12B.booking = "Open";
     // Unit13C.booking = "Open";
     title();
@@ -35,6 +35,7 @@ int make_booking(){
     cout << "0. " << Unit11A.booking;
     // cout << "1. " << Unit12B.booking;
     // cout << "2. " << Unit13C.booking;
+    cout << "3. Return to Main Menu";
     cout << "\nPlease select a room: ";
     cin >> roomchoice;
 
@@ -42,19 +43,22 @@ int make_booking(){
     {
         case 0:
             cout << "You selected unit 11A!";
-            cout << "Guest Name"
+            cout << "Guest Name: ";
+            cin >> Unit11A.guestname;
+            cout << "Guest Phone Number: ";
+            cin >> Unit11A.guestnum;
+            cout << "Number of days booked: ";
+            cin >> Unit11A.daysbooked;
             break;
-        case 1:
-            cout << "you selected room legend";
-            break;
-        case 2:
-            cout << "You selected room categories";
-            roomcategories();
-            break;
+//        case 1:
+//            cout << "you selected int 12C";
+//            break;
+//        case 2:
+//            cout << "You selected unit 13C";
+//            break;
         case 3:
-            cout << "You selected quit";
-            cout << "\nHave a nice day!";
-            return 0;
+            cout << "You selected return to main menu";
+            break;
         default:
             cout << "Invalid Input. Please Try Again" << endl;
             // Code loops endlessly and breaks if letters are input
@@ -64,6 +68,8 @@ int make_booking(){
 int roomlegend()
 {
     title();
+    cout << "[Room Legend]" << endl;
+
 }
 
 int roomcategories()
