@@ -19,21 +19,21 @@ int make_booking(){
         string roomnum;
         int daysbooked;
     };
-    Room 11A;
-    // Room 12B;
-    // Room 13C;
-    11A.roomnum = "11A";
-    // 12B.roomnum = "12B";
-    // 13C.roomnum = "13C";
-    11A.booking = "Open";
-    // 12B.booking = "Open";
-    // 13C.booking = "Open";
+    Room Unit11A;
+    // Room Unit12B;
+    // Room Unit13C;
+    Unit11A.roomnum = "11A";
+    // Unit12B.roomnum = "12B";
+    // Unit13C.roomnum = "13C";
+    Unit11A.booking = "Open";
+    // Unit12B.booking = "Open";
+    // Unit13C.booking = "Open";
     title();
     cout << "[Make Booking]" << endl;
     cout << "Available Rooms: " << endl;
-    cout << "1." << 11A.booking;
-    // cout << "2." << 12B.booking;
-    // cout << "3." << 13C.booking;
+    cout << "1." << Unit11A.booking;
+    // cout << "2." << Unit12B.booking;
+    // cout << "3." << Unit13C.booking;
     cout << "Please select a room: ";
     cin >> roomchoice;
 
@@ -86,7 +86,6 @@ int roomcategories()
     }
 }
 int servpack()
-
 {
     title();
 }
@@ -108,6 +107,7 @@ int main()
         {
             case 0:
                 cout << "you selected make booking";
+                make_booking();
                 break;
             case 1:
                 cout << "you selected room legend";
@@ -117,11 +117,8 @@ int main()
                 roomcategories();
                 break;
             case 3:
-
                 cout << "You selected quit";
-
-                cout << "Have a nice day!";
-
+                cout << "\nHave a nice day!";
                 return 0;
             default:
                 cout << "Invalid Input. Please Try Again" << endl;
