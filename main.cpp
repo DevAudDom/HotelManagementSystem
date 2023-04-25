@@ -8,17 +8,18 @@ void title() // Function without parameter, without return type
     cout << "Hotel Management System" << endl;
     cout << "********************************" << endl;
 }
+class Room
+{
+public:
+    string booking;
+    string guestname;
+    string guestnum;
+    string roomnum;
+    int daysbooked;
+};
+
 int make_booking(){
     int roomchoice;
-    class Room
-    {
-    public:
-        string booking;
-        string guestname;
-        string guestnum;
-        string roomnum;
-        int daysbooked;
-    };
     Room Unit11A;
     // Room Unit12B;
     // Room Unit13C;
@@ -31,13 +32,33 @@ int make_booking(){
     title();
     cout << "[Make Booking]" << endl;
     cout << "Available Rooms: " << endl;
-    cout << "1." << Unit11A.booking;
-    // cout << "2." << Unit12B.booking;
-    // cout << "3." << Unit13C.booking;
-    cout << "Please select a room: ";
+    cout << "0. " << Unit11A.booking;
+    // cout << "1. " << Unit12B.booking;
+    // cout << "2. " << Unit13C.booking;
+    cout << "\nPlease select a room: ";
     cin >> roomchoice;
 
-    return roomchoice;
+    switch (roomchoice)
+    {
+        case 0:
+            cout << "You selected unit 11A!";
+            cout << "Guest Name"
+            break;
+        case 1:
+            cout << "you selected room legend";
+            break;
+        case 2:
+            cout << "You selected room categories";
+            roomcategories();
+            break;
+        case 3:
+            cout << "You selected quit";
+            cout << "\nHave a nice day!";
+            return 0;
+        default:
+            cout << "Invalid Input. Please Try Again" << endl;
+            // Code loops endlessly and breaks if letters are input
+    }
 
 }
 int roomlegend()
@@ -92,7 +113,6 @@ int servpack()
 int main()
 {
     int choice;
-
     do
     {
         title();
