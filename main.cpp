@@ -17,6 +17,7 @@ public:
     string roomnum;
     int daysbooked;
     string guestnum; // Can't store more than 6 digits as int
+    double bookprice;
 };
 int roomcategories()
 {
@@ -57,9 +58,44 @@ int roomcategories()
             // Code loops endlessly and breaks if letters are input
     }
 }
+int pricing(int roomcatprice) //Modified code from In Class Work 5, function, function with parameter and reurn type
+{
+    int numlist[3];           // Array used to store guest ages for room price calculation
+    double sum = 0;
+
+    for (int i = 0;i < 3; i++)
+
+    {
+        if (i==0)
+        {
+            cout << "Please enter number of guests under 18: ";
+            cin >> numlist[i];
+            sum = sum + numlist[i];
+        }
+        else if (i==1)
+        {
+            cout << "Please enter number of guests between 18 and 60: ";
+            cin >> numlist[i];
+            sum = sum + numlist[i];
+        }
+        else if (i==2)
+        {
+            cout << "Please enter number of guests 60+: ";
+            cin >> numlist[i];
+            sum = sum + numlist[i];
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    sum = roomcatprice*200 + sum; // 200 dollars a day
+    return (sum);
+}
 int main()
 {
-    int menuchoice,roomchoice;
+    int menuchoice,roomchoice,roomcatprice,temp;
     Room Unit11A;   // Declaring object in Room class
     Room Unit12B;
     Room Unit13C;
@@ -110,6 +146,8 @@ int main()
                         cin >> Unit11A.guestnum;
                         cout << "Number of days booked: ";
                         cin >> Unit11A.daysbooked;
+                        temp = pricing(Unit11A.daysbooked);
+                        cout << "Booking price is " << temp << " dollars." <<endl;
                         cout << "Booking Complete";
                         break;
                     case 1:
@@ -121,6 +159,8 @@ int main()
                         cin >> Unit12B.guestnum;
                         cout << "Number of days booked: ";
                         cin >> Unit12B.daysbooked;
+                        temp = pricing(Unit12B.daysbooked);
+                        cout << "Booking price is " << temp << " dollars." <<endl;
                         cout << "Booking Complete";
                          break;
                     case 2:
@@ -132,6 +172,8 @@ int main()
                         cin >> Unit13C.guestnum;
                         cout << "Number of days booked: ";
                         cin >> Unit13C.daysbooked;
+                        temp = pricing(Unit13C.daysbooked);
+                        cout << "Booking price is " << temp << " dollars." <<endl;
                         cout << "Booking Complete";
                         break;
                     case 3:
