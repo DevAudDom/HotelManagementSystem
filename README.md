@@ -1,5 +1,4 @@
     Hotel Management System (Programming 1 Project). 
-    Description
 The Hotel Management System facilitates the hotel room booking process through making a reservation, accessing information on reserved or unreserved rooms and outputting information detailing the amenities offered by the rooms.  
 
 Offered me the challenge of working with object-oriented programming concepts and layers of conditional statements 
