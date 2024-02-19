@@ -10,7 +10,7 @@ Navigating displayed menus is handled by various control flow statements
 Several data types are used to store and access data 
 
    Future Improvements
--  Include SFML grapjhics library to display a map of hotel
+-  Include SFML graphics library to display a map of hotel
 -  More modular object design, replace room class with booking class
 -  Include output of receipt text file
 -  More organized menu output
