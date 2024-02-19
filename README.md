@@ -1,5 +1,5 @@
-# HMSCOP2006
- Hotel Management System (Programming 1 Project). 
+    Hotel Management System (Programming 1 Project). 
+    Description
 The Hotel Management System facilitates the hotel room booking process through making a reservation, accessing information on reserved or unreserved rooms and outputting information detailing the amenities offered by the rooms.  
 
 Offered me the challenge of working with object-oriented programming concepts and layers of conditional statements 
@@ -9,3 +9,11 @@ Utilizes Class Objects to store booking information
 Navigating displayed menus is handled by various control flow statements 
 
 Several data types are used to store and access data 
+
+   Future Improvements
+-  Include SFML grapjhics library to display a map of hotel
+-  More modular object design, replace room class with booking class
+-  Include output of receipt text file
+-  More organized menu output
+-  Adhere to best function, variable and class style practices
+-  Improved commenting 
