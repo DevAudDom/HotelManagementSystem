@@ -1,4 +1,5 @@
-    Hotel Management System (Programming 1 Project). 
+    Hotel Management System (Programming 1 Project).
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/DevAudDom/HotelManagementSystem/badge)](https://securityscorecards.dev/viewer/?uri=github.com/DevAudDom/HotelManagementSystem)
 The Hotel Management System facilitates the hotel room booking process through making a reservation, accessing information on reserved or unreserved rooms and outputting information detailing the amenities offered by the rooms.  
 
 Offered me the challenge of working with object-oriented programming concepts and layers of conditional statements 
@@ -17,4 +18,4 @@ Several data types are used to store and access data
 -  Adhere to best function, variable and class style practices
 -  Improved commenting
   
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/{DevAudDom}/{HotelManagementSystem}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{DevAudDom}/{HotelManagementSystem})
+
