@@ -15,5 +15,6 @@ Several data types are used to store and access data
 -  Include output of receipt text file
 -  More organized menu output
 -  Adhere to best function, variable and class style practices
--  Improved commenting 
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/{owner}/{repo}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{DevAudDom}/{HotelManagementSystem})
+-  Improved commenting
+  
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/{DevAudDom}/{HotelManagementSystem}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{DevAudDom}/{HotelManagementSystem})
